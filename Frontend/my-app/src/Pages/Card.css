@@ -1,0 +1,167 @@
+/* Container for the entire request section */
+.requests-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  background-color: #f4f6f9;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.header {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Loading text */
+.loading {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+}
+
+/* No requests found message */
+.no-requests {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+}
+
+/* Container for request cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+/* Individual request card */
+.card {
+  background: #dbf4f0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Request name and type */
+.food-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.food-type {
+  font-size: 18px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Status badge */
+.status {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.status.available {
+  background-color: #4caf50;
+  color: white;
+}
+
+.status.scheduled {
+  background-color: #ff9800;
+  color: white;
+}
+
+.status.completed {
+  background-color: #e78cb5;
+  color: white;
+}
+
+/* Action buttons */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.schedule-btn,
+.complete-btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: none;
+}
+
+.schedule-btn {
+  background-color: #42afbf;
+  color: white;
+  justify-content: center;
+}
+
+.schedule-btn:hover {
+  background-color: #249daf;
+  transform: scale(1.05);
+}
+
+.complete-btn {
+  background-color: #10b981;
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .requests-container {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+/* Center the buttons inside the action-buttons container */
+.action-buttons {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically (if needed) */
+  margin-top: 15px;
+}
+
+/* Optional: Add a width to the buttons to make sure they stay centered */
+.schedule-btn,
+.complete-btn {
+  width: 100%; /* This will make the button take up the full width of its container */
+  max-width: 200px; /* Optional: restrict max width if you don't want the button to stretch too much */
+}

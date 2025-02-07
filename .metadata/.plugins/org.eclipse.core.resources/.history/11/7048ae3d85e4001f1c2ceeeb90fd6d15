@@ -1,0 +1,26 @@
+package com.project.foodbridge.controllers;
+
+import com.project.foodbridge.entity.Request;
+import com.project.foodbridge.services.RequestService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/requests")
+public class RequestController {
+
+    @Autowired
+    private RequestService requestService;
+
+    @GetMapping
+    public List<Request> getAllRequests() {
+        return requestService.getAllRequests();
+    }
+
+    @PostMapping
+    public Request createRequest(@RequestBody Request request) {
+        return requestService.saveRequest(request);
+    }
+}

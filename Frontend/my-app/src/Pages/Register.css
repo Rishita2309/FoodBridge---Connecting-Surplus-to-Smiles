@@ -1,0 +1,73 @@
+/* Register Page Styles */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .register-box {
+    background-color: #dbf4f0;
+    border: 1px solid #d1d1d1; /* Light grey border */
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .register-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-container label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .input-container input {
+    font-size: 16px;
+  }
+  
+  .form-check {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-submit {
+    background-color: #42afbf;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .btn-submit:hover {
+    background-color: #379a9e;
+  }
+  
+  /* Radio Button Styling */
+  .form-check-input {
+    margin-right: 5px;
+  }
+  
+  .form-check-label {
+    font-size: 14px;
+  }
+  
+  /* Center the text in the register link */
+  .register-link {
+    text-align: center;
+  }
+  
+  .register-link a {
+    color: #42afbf;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  

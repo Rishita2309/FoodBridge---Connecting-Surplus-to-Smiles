@@ -1,0 +1,22 @@
+package com.project.foodbridge.services;
+
+import com.project.foodbridge.entity.Request;
+import com.project.foodbridge.repository.RequestRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import java.util.List;
+
+@Service
+public class RequestService {
+
+    @Autowired
+    private RequestRepository requestRepository;
+
+    public List<Request> getAllRequests() {
+        return requestRepository.findAll();
+    }
+
+    public Request saveRequest(Request request) {
+        return requestRepository.save(request);
+    }
+}

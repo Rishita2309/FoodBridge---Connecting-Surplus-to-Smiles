@@ -1,0 +1,28 @@
+package com.project.foodbridge.controllers;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import com.project.foodbridge.entity.Food;
+import com.project.foodbridge.services.FoodService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@CrossOrigin(origins = "http://localhost:3003")
+@RestController
+@RequestMapping("/api/food")
+public class FoodController {
+
+    @Autowired
+    private FoodService foodService;
+
+    @GetMapping
+    public List<Food> getAllFoodItems() {
+        return foodService.getAllFoodItems();
+    }
+
+    @PostMapping
+    public Food createFood(@RequestBody Food food) {
+        return foodService.saveFood(food);
+    }
+}

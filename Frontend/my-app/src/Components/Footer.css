@@ -1,0 +1,48 @@
+/* Footer container */
+.footer {
+    background-color: #dbf4f0;
+    padding: 30px 0;
+  }
+  
+  /* Heading styles */
+  .footer h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* Map placeholder style */
+  .map-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+  }
+  
+  /* Footer links */
+  .footer-links a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer-links a:hover {
+    color: #16a085;
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 767px) {
+    .footer .row {
+      text-align: center;
+    }
+  
+    .footer .col-md-4 {
+      margin-bottom: 30px;
+    }
+  }
+  
