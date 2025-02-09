@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Apply Cormorant for body text */
+body {
+  margin: 0;
+  font-family: 'Cormorant', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 
+               'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 900;  /* Slightly thicker font */
+  font-size: 25px;   /* Increase font size */
+  line-height: 1.6;  /* Improve readability by increasing line height */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply EB Garamond for code blocks or any other text you want */
+code {
+  font-family: 'EB Garamond', source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-weight: 120;  /* Make code text thicker */
+  font-size: 70px;   /* Increase the font size for code */
+}

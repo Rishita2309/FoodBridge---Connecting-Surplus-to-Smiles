@@ -1,0 +1,93 @@
+/* Register Page Styles */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.register-box {
+  background-color: #dbf4f0;
+  border: 1px solid #d1d1d1;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.register-box h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-container input {
+  font-size: 16px;
+}
+
+.btn-submit {
+  background-color: #42afbf;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn-submit:hover {
+  background-color: #379a9e;
+}
+
+/* Radio Button Styling */
+.role-selection {
+  display: flex;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-radio input {
+  opacity: 0;
+  position: absolute;
+}
+
+.radio-circle {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #42afbf;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+  transition: all 0.2s ease;
+}
+
+.custom-radio input:checked + .radio-circle {
+  background-color: #42afbf;
+  border-color: #42afbf;
+}
+
+.custom-radio input:checked + .radio-circle::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}

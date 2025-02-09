@@ -1,0 +1,50 @@
+.top {
+    text-align: center; /* Center the text horizontally */
+
+}
+
+h1 {
+    margin: 0; /* Remove any extra space around the heading */
+    font-size: 95px;
+ 
+}
+
+.top p {
+    margin-top: 10px; /* Add some space between h1 and p */
+    font-size: 30px;
+}
+
+.logo-image {
+    display: block;          /* Makes the image a block-level element */
+    margin-left: auto;       /* Centers it horizontally */
+    margin-right: auto;      /* Centers it horizontally */
+    max-width: 100%;         /* Ensures the image doesn't exceed container width */
+    height: 250px; 
+ }
+
+.para {
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    line-height: 1.8; /* Improved spacing between lines */
+    text-align: justify; /* Makes text look clean and professional */
+    margin: 10px auto; /* Centers the paragraph and adds vertical spacing */
+    padding: 10px ; /* Adds inner padding for better spacing */
+    max-width: 900px; /* Restricts width for better reading experience */
+    color: #333; /* Dark gray text for better contrast */
+    margin-bottom: 100px;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .para {
+        padding: 10px 40px; /* Reduces padding on smaller screens */
+        font-size: 1rem; /* Slightly smaller font for better fit */
+    }
+}
+
+@media (max-width: 480px) {
+    .para {
+        padding: 10px 20px; /* Even less padding for very small screens */
+        font-size: 0.95rem; /* Adjust font size for small devices */
+    }
+}

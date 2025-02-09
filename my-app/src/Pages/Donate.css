@@ -1,0 +1,86 @@
+
+
+
+.donate-container {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.donate-box {
+  background-color: #dbf4f0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+.share {
+  color: #42afbf;
+  text-shadow: 2px 2px 4px rgba(12, 132, 147, 0.6);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.highlight-number {
+  font-weight: bold;
+  color: #082679; /* Example color, change as needed */
+  font-size: 1.2em; /* Increase size if needed */
+}
+
+
+.message {
+  color: #082679;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-container label {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-container input,
+.input-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.btn-submit {
+  background-color: #42afbf;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #329ca9;
+}
+
+.btn-submit:disabled {
+  background-color: #9ad1db;
+  cursor: not-allowed;
+}
